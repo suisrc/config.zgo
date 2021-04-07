@@ -114,6 +114,7 @@ type JWTAuth struct {
 	LimitExpired  int    `default:"7200"`  // 访问令牌过期时间, 默认60分钟
 	LimitRefresh  int    `default:"86400"` // 刷新令牌过期时间, 默认24小时
 	AuthzServer   string // 认证服务器， 子服务器需要认证权限时候调用
+	AuthxServer   string // 认证服务器， 子服务器需要认证权限时候调用
 }
 
 // RateLimiter 请求频率限制配置参数
